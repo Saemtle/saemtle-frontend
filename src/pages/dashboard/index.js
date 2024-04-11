@@ -82,7 +82,7 @@ const DashboardDefault = () => {
       <Grid item xs={12} sm={6} md={4} lg={3}>
         <AnalyticEcommerce title="Total Page Views" count="4,42,236" percentage={59.3} extra="35,000" />
       </Grid>
-      <Grid item xs={12} sm={6} md={4} lg={3}>
+      {/* <Grid item xs={12} sm={6} md={4} lg={3}>
         <AnalyticEcommerce title="Total Users" count="78,250" percentage={70.5} extra="8,900" />
       </Grid>
       <Grid item xs={12} sm={6} md={4} lg={3}>
@@ -90,7 +90,7 @@ const DashboardDefault = () => {
       </Grid>
       <Grid item xs={12} sm={6} md={4} lg={3}>
         <AnalyticEcommerce title="Total Sales" count="$35,078" percentage={27.4} isLoss color="warning" extra="$20,395" />
-      </Grid>
+      </Grid> */}
 
       <Grid item md={8} sx={{ display: { sm: 'none', md: 'block', lg: 'none' } }} />
 
@@ -309,7 +309,7 @@ const DashboardDefault = () => {
             </ListItemButton>
           </List>
         </MainCard>
-        <MainCard sx={{ mt: 2 }}>
+        {/* <MainCard sx={{ mt: 2 }}>
           <Stack spacing={3}>
             <Grid container justifyContent="space-between" alignItems="center">
               <Grid item>
@@ -335,7 +335,7 @@ const DashboardDefault = () => {
               Need Help?
             </Button>
           </Stack>
-        </MainCard>
+        </MainCard> */}
       </Grid>
     </Grid>
   );
