@@ -25,7 +25,7 @@ const barChartOptions = {
     enabled: false
   },
   xaxis: {
-    categories: ['Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su'],
+    categories: ['AAA-123', 'BBB-321', 'CCC-456', 'DFD-123', 'KJK-765', 'ADA-123', 'DCD-897'],
     axisBorder: {
       show: false
     },

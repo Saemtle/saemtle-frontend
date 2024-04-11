@@ -78,7 +78,7 @@ const DashboardDefault = () => {
       {/* row 1 */}
       
       <Grid item xs={12} sx={{ mb: -2.25 }}>
-        <Typography variant="h5">Dashboard</Typography>
+        <Typography variant="h5">장비 현황</Typography>
       </Grid>
       <Grid item xs={12} sm={6} md={4} lg={3}>
         <AnalyticEcommerce title="연동된 장비" count="100 대" extra="현재 연결된 총 장비 수 입니다."/>
@@ -130,7 +130,7 @@ const DashboardDefault = () => {
       <Grid item xs={12} md={5} lg={4}>
         <Grid container alignItems="center" justifyContent="space-between">
           <Grid item>
-            <Typography variant="h5">주간 수위 측정</Typography>
+            <Typography variant="h5">장비별 현재 수위</Typography>
           </Grid>
           <Grid item />
         </Grid>
