@@ -81,24 +81,24 @@ const DashboardDefault = () => {
         <Typography variant="h5">Dashboard</Typography>
       </Grid>
       <Grid item xs={12} sm={6} md={4} lg={3}>
-        <AnalyticEcommerce title="Total Page Views" count="4,42,236" percentage={59.3} extra="35,000" />
+        <AnalyticEcommerce title="연동된 장비" count="100 대" extra="현재 연결된 총 장비 수 입니다."/>
       </Grid>
       
       <Grid item xs={12} sm={6} md={4} lg={3}>
-        <AnalyticEcommerce title="Total Users" count="78,250" percentage={70.5} extra="8,900" />
+      <AnalyticEcommerce title="점검 필요 장비" count="3 대" extra="네트워크 연결 실패 등의 수동 점검이 필요합니다."/>
       </Grid>
       <Grid item xs={12} sm={6} md={4} lg={3}>
-        <AnalyticEcommerce title="Total Order" count="18,800" percentage={27.4} isLoss color="warning" extra="1,943" />
+        <AnalyticEcommerce title="주간 최대 수위" count="18,800" percentage={60.4} extra="전 주와 비교한 최대 수위입니다." />
       </Grid>
       <Grid item xs={12} sm={6} md={4} lg={3}>
-        <AnalyticEcommerce title="Total Sales" count="$35,078" percentage={27.4} isLoss color="warning" extra="$20,395" />
+        <AnalyticEcommerce title="임의 값" count="0" isLoss color="warning" extra="표시하고 싶은 임의값" />
       </Grid>
 
       {/* row 2 */}
       <Grid item xs={12} md={7} lg={8}>
         <Grid container alignItems="center" justifyContent="space-between">
           <Grid item>
-            <Typography variant="h5">Unique Visitor</Typography>
+            <Typography variant="h5">선택된 장비 : AAA-123 </Typography>
           </Grid>
           <Grid item>
             <Stack direction="row" alignItems="center" spacing={0}>
@@ -108,7 +108,7 @@ const DashboardDefault = () => {
                 color={slot === 'month' ? 'primary' : 'secondary'}
                 variant={slot === 'month' ? 'outlined' : 'text'}
               >
-                Month
+                월간
               </Button>
               <Button
                 size="small"
@@ -116,7 +116,7 @@ const DashboardDefault = () => {
                 color={slot === 'week' ? 'primary' : 'secondary'}
                 variant={slot === 'week' ? 'outlined' : 'text'}
               >
-                Week
+                주간
               </Button>
             </Stack>
           </Grid>
@@ -130,18 +130,12 @@ const DashboardDefault = () => {
       <Grid item xs={12} md={5} lg={4}>
         <Grid container alignItems="center" justifyContent="space-between">
           <Grid item>
-            <Typography variant="h5">Income Overview</Typography>
+            <Typography variant="h5">주간 수위 측정</Typography>
           </Grid>
           <Grid item />
         </Grid>
         <MainCard sx={{ mt: 2 }} content={false}>
           <Box sx={{ p: 3, pb: 0 }}>
-            <Stack spacing={2}>
-              <Typography variant="h6" color="textSecondary">
-                This Week Statistics
-              </Typography>
-              <Typography variant="h3">$7,650</Typography>
-            </Stack>
           </Box>
           <MonthlyBarChart />
         </MainCard>
