@@ -26,7 +26,7 @@ import ProfileTab from './ProfileTab';
 import SettingTab from './SettingTab';
 
 // assets
-import avatar1 from 'assets/images/users/avatar-1.png';
+import avatar1 from 'assets/images/users/avatar-3.png';
 import { LogoutOutlined, SettingOutlined, UserOutlined } from '@ant-design/icons';
 
 // tab panel wrapper
@@ -98,7 +98,7 @@ const Profile = () => {
       >
         <Stack direction="row" spacing={2} alignItems="center" sx={{ p: 0.5 }}>
           <Avatar alt="profile user" src={avatar1} sx={{ width: 32, height: 32 }} />
-          <Typography variant="subtitle1">John Doe</Typography>
+          <Typography variant="subtitle1">홍 길동</Typography>
         </Stack>
       </ButtonBase>
       <Popper
@@ -141,9 +141,9 @@ const Profile = () => {
                           <Stack direction="row" spacing={1.25} alignItems="center">
                             <Avatar alt="profile user" src={avatar1} sx={{ width: 32, height: 32 }} />
                             <Stack>
-                              <Typography variant="h6">John Doe</Typography>
+                              <Typography variant="h6">홍 길동</Typography>
                               <Typography variant="body2" color="textSecondary">
-                                UI/UX Designer
+                                XX동 주무관
                               </Typography>
                             </Stack>
                           </Stack>
@@ -168,7 +168,7 @@ const Profile = () => {
                                 textTransform: 'capitalize'
                               }}
                               icon={<UserOutlined style={{ marginBottom: 0, marginRight: '10px' }} />}
-                              label="Profile"
+                              label="계정 관리"
                               {...a11yProps(0)}
                             />
                             <Tab
@@ -180,7 +180,7 @@ const Profile = () => {
                                 textTransform: 'capitalize'
                               }}
                               icon={<SettingOutlined style={{ marginBottom: 0, marginRight: '10px' }} />}
-                              label="Setting"
+                              label="설정"
                               {...a11yProps(1)}
                             />
                           </Tabs>

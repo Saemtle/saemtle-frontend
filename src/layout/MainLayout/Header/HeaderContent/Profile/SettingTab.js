@@ -23,31 +23,31 @@ const SettingTab = () => {
         <ListItemIcon>
           <QuestionCircleOutlined />
         </ListItemIcon>
-        <ListItemText primary="Support" />
+        <ListItemText primary="지원 및 안내" />
       </ListItemButton>
       <ListItemButton selected={selectedIndex === 1} onClick={(event) => handleListItemClick(event, 1)}>
         <ListItemIcon>
           <UserOutlined />
         </ListItemIcon>
-        <ListItemText primary="Account Settings" />
+        <ListItemText primary="계정 설정 변경" />
       </ListItemButton>
       <ListItemButton selected={selectedIndex === 2} onClick={(event) => handleListItemClick(event, 2)}>
         <ListItemIcon>
           <LockOutlined />
         </ListItemIcon>
-        <ListItemText primary="Privacy Center" />
+        <ListItemText primary="보안" />
       </ListItemButton>
       <ListItemButton selected={selectedIndex === 3} onClick={(event) => handleListItemClick(event, 3)}>
         <ListItemIcon>
           <CommentOutlined />
         </ListItemIcon>
-        <ListItemText primary="Feedback" />
+        <ListItemText primary="메세지" />
       </ListItemButton>
       <ListItemButton selected={selectedIndex === 4} onClick={(event) => handleListItemClick(event, 4)}>
         <ListItemIcon>
           <UnorderedListOutlined />
         </ListItemIcon>
-        <ListItemText primary="History" />
+        <ListItemText primary="기록" />
       </ListItemButton>
     </List>
   );
