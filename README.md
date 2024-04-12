@@ -33,11 +33,27 @@ npm install -g yarn
 yarn
 ```
 
-3. Run project
+3. Run project (개발환경 Windows/MacOS 등 로컬에서 테스트할 때)
 
 ```
 yarn start
 ```
+
+3. 배포 (서버에 배포할 때)
+```
+npm run build
+```
+/build 안에 빌드된 정적파일이 생성됨. 이것을 서버로 배포하면 됨.
+
+실제 배포 시, 웹서버 사용해야하나, npm 모듈인 Serve 로 테스트하면 됨
+
+```
+npm intall -g serve
+```
+```
+serve -s build
+```
+
 
 ## Documentation
 
