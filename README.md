@@ -13,7 +13,22 @@ git clone https://github.com/codedthemes/mantis-free-react-admin-template.git
 ```
 
 2. Install packages
+   
+```
+sudo apt update
+```
 
+```
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
+source ~/.bashrc
+```
+
+```
+nvm install 14
+```
+```
+
+```
 ```
 yarn
 ```
