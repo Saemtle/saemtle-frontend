@@ -47,11 +47,20 @@ npm run build
 
 실제 배포 시, 웹서버 사용해야하나, npm 모듈인 Serve 로 테스트하면 됨
 
+Serve 로 테스트
 ```
 npm intall -g serve
 ```
 ```
 serve -s build
+```
+
+데몬으로 실행 (백그라운드에서 계속 실행됨)
+```
+npm install pm2 -g
+```
+```
+pm2 start serve --name my-app -- -s build -l 8000
 ```
 
 
